@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPowerSolution</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--Navigation-->
+    <nav>
+        <a href="index.html"><img src="images/logo.svg" alt="Company Logo"></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-times">&times;</i>
+                <li><a class="home-a" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="menu hambuger"><!--menu hamberger for smaller screen-->
+        </div>
+    </nav>
+
+    <!--Home-->
+
+    <section id="about-home">
+        
+        <h2>Contact US</h2>
+       
+    </section>
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in tourch</h2>
+            <p>Looking for help? Fill the form and start a new adventure.</p>
+
+            <div class="getin-details">
+                <h3>Headquarters</h3>
+                <div>
+                    <i class="fa-home get">&#127968;</i>
+                    <p>744 New York Ave, Brooklyn, Kings, New York 10224</p>
+                </div>
+
+                <h3>Phone</h3>
+                <div>
+                    <i class="fa-phone get">&#128222;</i>
+                    <p>08056030475<br>08059989897</p>
+                </div>
+
+                <h3>Support</h3>
+                <div>
+                    <i class="fa-envelope-open-text get">&#9993;</i>
+                    <p>technica@support.com <br> help@educa.com</p>
+                </div>
+
+                <h3>Follow Us</h3>
+                <div class="pro-links">
+                    <a href="#"><img src="images/facebook_.png" alt=""></a>
+                    <a href="#"><img src="images/instagram_.png" alt=""></a>
+                    <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img src="images/twitter_.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <form action="form-handler.php" method="post">
+                <h4>Let's Connect</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="form-row">
+                     <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-col">
+                    <input type="text" name="Subject" placeholder="Subject">
+                </div>
+                <div class="form-col">
+                    <textarea name="message" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                 </div>
+                <div class="form-col">
+                    <button type="submit">Send Message</button>
+                 </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="map">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.403017626337!2d3.3805103748579866!3d6.596730893397046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92f722498dbb%3A0x80909430b9ccbde5!2s40%20Ikosi%20Road%2C%20Ketu%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1688919822296!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--delete width and height of the copy link and add it to your css file-->
+
+    </section>
+
+
+
+ 
+
+    <!--footer-->
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Manage Website</li>
+            <li>Marketing Services</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Manage Website</li>
+            <li>Marketing Services</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletters</h3>
+            <p>You can trust us. We only send promo offers.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Adress">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169; &copy;2023 All right reserved | Power by Spower </p>
+            <div class="pro-links">
+                <a href="#"><img src="images/facebook_.png" alt="facebook icon"></a>
+                <a href="#"><img src="images/instagram_.png" alt="instagram icon"></a>
+                <a href="#"><img src="images/linkedin.png" alt="Linedin icon"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+
+        /* JavaScript code for active menu item */
+        var navItems = document.querySelectorAll("nav ul li a");
+
+        for(var i = 0; i < navItems.length; i++) {
+        if(navItems[i].href === window.location.href) {
+            navItems[i].className = "active";}
+        }
+    </script>
+  
+</body>
+</html>
